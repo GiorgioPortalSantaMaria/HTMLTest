@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: linear-gradient(to bottom, #ccccff, #ff99cc);
+        }
+        h1, h2{
+            text-align: center;
+            font-size: large;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        html, body{
+            height: 100%;
+        }
+        input, label{
+            color: rgb(6, 5, 78);
+            font-size:small;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        input[type="radio"]:checked{
+            background:url(Asssets/squirrelfavico.ico);
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to AutoPetsBrawler arena!</h1>
+    <h2 style="font-size:small;">you're just a couple steps away from playing! We just need to know you better </h2>
+    <form action="" method="get">
+        <label for="Nickname">Nickname!</label>
+        <input type="text" name="Nickname" id="Nickname" style="color: red;" autofocus required>
+        <br>
+        <label for="inptEmail">E-mail!</label>
+        <input type="email" id="inptEmail" style="color: royalblue;" required>
+
+        <br>
+        <label for="FighterSlc">Choose your favourite fighter!</label><br>
+        <input type="radio" name="FighterSlc" id="FighterSlc1" value="Warrior">
+        <label for="FighterScl1">Warrior</label><br>
+        <input type="radio" name="FighterSlc" id="FighterSlc2" value="Mage">
+        <label for="FighterScl2">Mage</label><br>
+        <input type="radio" name="FighterSlc" id="FighterSlc1" value="Rogue">
+        <label for="FighterScl3">Rogue</label><br>
+        
+
+
+        <label for="favCol">What colour would you like to have your avatar be?</label>
+        <input type="color" name="favCol" id="favCol" value="#ccccff">
+        <br>
+
+        <label for="favSound">Upload your favourite sound!</label>
+        <input type="file" accept=".mp3" id="favSound" name="favSound" >
+
+        <br>
+        <label for="birth">When were you born?</label>
+        <input type="date" required>
+
+        <input type="range" min="0" max="100" value="60">
+
+        <p>To end things, your password</p>
+        <input type="password" placeholder="password goes here"><br>
+        <input type="password" placeholder="confirm your password">
+
+        <br>
+        <br>
+        <input type="submit">
+        <input type="reset">
+    </form>
+</body>
+</html>

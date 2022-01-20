@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: linear-gradient(to bottom, rgb(156, 156, 199), rgb(129, 184, 167));
+            background-repeat: no-repeat;
+            margin: 0%;
+            height: 100%;
+        }
+        table{
+            margin: auto;
+            border:1px solid black;
+        }
+        html, body {
+            margin: 0;
+            height: 100%;
+        }
+        td, th{
+            border: 1px solid black;
+            margin: 30%;
+            size: 30%;
+        }
+        tr{
+            margin: 30%;
+        }
+        #price{
+            text-align: center;
+        }
+    </style>
+</head>
+<body >
+    <table>
+        <caption>Tabla de videojuegos</caption>
+        <colgroup span="2" style="background-color: rgba(20, 20, 20, 0.1);">
+            
+            <col></col>
+            <col style="text-align: center;"></col>
+        </colgroup>
+        <colgroup span="1" style="background-color: rgba(255, 127, 80, 0.137);">
+        </colgroup>
+
+        <tr>
+            <th>Juego </th>
+            <th id="price">Precio</th>
+            <th>Autor </th>
+        </tr>
+        <tr>
+            <td>Guilty Gear XRD</td>
+            <td colspan="2">ArcSystemWorks</td>
+        </tr>
+        <tr>
+            <td>Undertale</td>
+            <td id="price">10€</td>
+            <td rowspan="2">Toby Fox</td>
+
+        </tr>
+        <tr>
+            <td>Undertale 2 Electric Boogaloo</td>
+            <td  id="price">10€</td>
+
+        </tr>
+        <tr>
+            <td>Call of duty</td>
+            <td  id="price">60€</td>
+            <td>Activision-Blizzard</td>
+        </tr>
+
+    </table>
+</body>
+</html>
