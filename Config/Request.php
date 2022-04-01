@@ -43,6 +43,10 @@
         public function getArgumento(){
             return $this->argumento;
         }
+
+        public function getMetodo(){
+            return $this->metodo;
+        }
     }
 
 
