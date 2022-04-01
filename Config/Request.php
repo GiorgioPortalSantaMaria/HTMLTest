@@ -2,7 +2,7 @@
 
     class Request{
 
-        private $controllador;
+        private $controlador;
         private $metodo;
         private $argumento;
 
@@ -14,15 +14,34 @@
                 $ruta = explode("/", $ruta);
                 $ruta = array_filter($ruta);
                 
-                $this->controllador = strtolower(array_shift($ruta));
+                $this->controlador = strtolower(array_shift($ruta));
                 $this->metodo = strtolower(array_shift($ruta));
                 if(!$this->metodo){
                     $this->metodo = "index";
                 }
 
                 $this->argumento = $ruta;
-                if(!$this->argumento )
+                $this->metodo = strtolower(array_shift($ruta));
+
+                if(!$this->argumento ){
+                    $this->metodo = "index";
+                }
+                $this->argumento = $ruta;
+
             }
+        }
+
+        public function getControlador(){
+                return $this->controlador;
+            
+        }
+
+        public function getRuta(){
+            return $this->ruta;
+        }
+
+        public function getArgumento(){
+            return $this->argumento;
         }
     }
 
