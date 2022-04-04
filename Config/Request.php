@@ -19,13 +19,7 @@
                 if(!$this->metodo){
                     $this->metodo = "index";
                 }
-
                 $this->argumento = $ruta;
-                $this->metodo = strtolower(array_shift($ruta));
-
-                if(!$this->argumento ){
-                    $this->metodo = "index";
-                }
                 $this->argumento = $ruta;
 
             }
