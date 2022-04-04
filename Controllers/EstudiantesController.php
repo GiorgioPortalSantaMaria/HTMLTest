@@ -1,13 +1,28 @@
 <?php namespace Controllers;
 
+use Controllers\estudiantesController as ControllersEstudiantesController;
+use Models\Estudiante as Estudiante;
+
     class estudiantesController{
 
+        private $estudiante;
+
+        public function __construct()
+        {
+            $this->estudiante = new Estudiante();
+        }
+
         public function index(){
-            print "Hola soy el index del estudiante";
+            $datos = $this->estudiante->listar();
+            return $datos;
         }
 
         public function deleteAll(){
-            print "Eliminando";
+
         }
+
+
     }
+
+    $estudiantes = new ControllersEstudiantesController();
 ?>

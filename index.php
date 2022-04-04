@@ -14,6 +14,7 @@ define("URL", "http://" . $_SERVER['HTTP_HOST']);
 
     require "Config/Autoload.php";
     Config\Autoload::run();
+    require_once "Views\Template.php";
     Config\Enrutador::run(new Request());
 
 ?>

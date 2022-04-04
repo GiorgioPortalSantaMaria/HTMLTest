@@ -12,7 +12,7 @@ use mysqli;
 
         public function listar(){
 
-            $sql = "SELECT t1.*, t2.nombre as nombre_seccion FROM estudiantes t1 INNER JOIN secciones t2 ON t1.id_seccion = t2.id";
+            $sql = "SELECT t1.*, t2.nombre as nombre_seccion FROM estudiantes t1 INNER JOIN seccion t2 ON t1.id_seccion = t2.id";
             $datos = $this->con->consultaRetorno($sql);
             return $datos;
         }
