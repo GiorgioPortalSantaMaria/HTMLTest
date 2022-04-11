@@ -25,6 +25,10 @@ class Template
                 .navbar-toggler:focus{
                     box-shadow: 0 0 0 0.25em  white;
                 }
+
+                body{
+                    background: #33b7e2;
+                }
             </style>
 
         </head>
