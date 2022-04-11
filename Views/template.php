@@ -22,7 +22,9 @@ class Template
             <title>Aplicación php</title>
 
             <style>
-                
+                .navbar-toggler:focus{
+                    box-shadow: 0 0 0 0.25em  white;
+                }
             </style>
 
         </head>
@@ -35,7 +37,7 @@ class Template
 
                             
                             <a class="navbar-brand" href="#">Navbar</a>
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navHolder" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navHolder" aria-controls="navHolder" aria-expanded="false" aria-label="Toggle navigation">
                                 <i class="fa-solid fa-bars" style="color:white"></i>
                             </button>
                             <div class="navbar-collapse collapse" id="navHolder">
