@@ -6,6 +6,9 @@
             $controlador = $request->getControlador() . "Controller";
             $ruta = ROOT . "Controllers" . DS . $controlador. ".php";
             $metodo = $request->getMetodo();
+            if($metodo =="index.php"){
+                $metodo = "index";
+            }
             $argumento = $request->getArgumento();
             if(is_readable($ruta)){
                 require_once $ruta;

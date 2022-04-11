@@ -23,7 +23,7 @@
                 $this->argumento = $ruta;
 
             } else{
-                $this->controlador = "estudiantes";
+                $this->controlador = "home";
                 $this->metodo = "index";
             }
         }

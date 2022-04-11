@@ -18,11 +18,10 @@ use Models\Estudiante as Estudiante;
         }
 
         public function deleteAll(){
-
         }
 
 
     }
 
-    $estudiantes = new ControllersEstudiantesController();
+    $estudiantes = new estudiantesController();
 ?>

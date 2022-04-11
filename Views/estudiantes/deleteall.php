@@ -6,12 +6,12 @@
             
         <?php
 
-        $spanClasses = "d-inline m-1";
+        $spanClasses = "";
         $datos = $estudiantes->index();
 
         while ($row = mysqli_fetch_array($datos)) {
 
-            echo "<span class='$spanClasses'>" . $row['nombre'] . "</span>";
+            echo "<img class='$spanClasses' src='". $row["imagen"] . " '>";
         }
         ?>
     </p>
