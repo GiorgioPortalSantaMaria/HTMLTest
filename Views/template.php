@@ -64,7 +64,7 @@ class Template
                                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" id="seccionNavMenu">Secciones</a>
                                         <ul class="dropdown-menu bg-primary" role="menu" aria-labelledby="seccionNavMenu">
                                             <li><a href="<?php echo URL; ?>/EjercicioTestPHP/secciones" class="dropdown-item">Listado</a></li>
-                                            <li><a href="<?php echo URL; ?>/EjercicioTestPHP/secciones" class="dropdown-item">Agregar</a></li>
+                                            <li><a href="<?php echo URL; ?>/EjercicioTestPHP/secciones/agregar" class="dropdown-item">Agregar</a></li>
                                         </ul>
                                     </li>
 
